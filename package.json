@@ -1,0 +1,42 @@
+{
+  "name": "react-component-filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "esnext": "lib/index.js",
+  "types": "src/typings/globals.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development webpack --mode=development --watch",
+    "build": "NODE_ENV=production webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "rc-trigger": "^2.4.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.2",
+    "awesome-typescript-loader": "^4.0.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "fork-ts-checker-webpack-plugin": "^0.4.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "postcss-flexbugs-fixes": "^3.3.1",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.1",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "typescript": "^2.8.3",
+    "webpack": "4.4.0",
+    "webpack-cli": "^2.1.4"
+  }
+}
