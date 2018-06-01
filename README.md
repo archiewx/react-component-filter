@@ -2,4 +2,4 @@
 
 look
 
-![](./static/2018-06-01 15.28.54.gif)
+![](https://raw.githubusercontent.com/zsirfs/react-component-filter/master/static/2018-06-01%2015.28.54.gif)
