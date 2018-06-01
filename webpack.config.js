@@ -6,13 +6,12 @@ const ExtractPlugin = require('extract-text-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const config = {
-  entry: './src/index.tsx',
+  entry: ['./src/index.tsx'],
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'lib'),
-    publicPath: './lib/public'
-    // library: 'RCFilter',
-    // libraryTarget: 'umd'
+    library: 'RCFilter',
+    libraryTarget: 'umd'
   },
   resolve: {
     extensions: ['.js', '.json', '.jsx', '.ts', '.tsx', '.d.ts'],
@@ -123,7 +122,7 @@ if (process.env.NODE_ENV === 'production') {
   config.plugins.concat([
     new ForkTsCheckerWebpackPlugin({
       async: false
-    }),
+    })
     // new ExtractPlugin({ filename: 'index.css', allChunks: true })
     // new MiniCssExtractPlugin({
     //   filename: 'index.[name].css',
